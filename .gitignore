@@ -1,0 +1,16 @@
+# Documents personnels (CV, diplômes)
+CV_Lucien_YAOGO.pdf
+*.pdf
+*.docx
+
+# Fichiers de configuration et clés (Cybersécurité)
+.env
+config.php
+secrets.txt
+*.log
+
+# Dossiers système et temporaires
+.DS_Store
+node_modules/
+dist/
+.vscode/
