@@ -386,16 +386,19 @@
             to { left: 100%; }
         }
 
-        /* === CSS POUR L'EFFET NÉON AU SURVOL === */
+        /* === CSS POUR L'ICÔNE LINKEDIN BLEU OFFICIEL AVEC EFFET NÉON === */
+
+        /* Style par défaut (Bleu LinkedIn officiel) */
+        .fab.fa-linkedin {
+            color: #0077b5; /* Bleu officiel LinkedIn */
+            transition: 0.3s; /* Transition fluide pour l'effet de survol */
+        }
+        
+        /* Style au survol (Effet Néon Cyber vert) */
         .fab.fa-linkedin:hover {
             color: #00ff9d; /* Néon vert Cyber */
             text-shadow: 0 0 10px rgba(0, 255, 157, 0.7); /* Lueur diffuse */
-            transform: scale(1.1); /* Léger grossissement */
-        }
-
-        #projects {
-            padding: 100px 0;
-            background: var(--bg-dark);
+            transform: scale(1.1); /* Léger grossissement pour l'interactivité */
         }
 
         .projects-grid {
@@ -1090,7 +1093,7 @@
         <div class="container">
             <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Lucien YAOGO | Expert Cyber & IA</p>
 
-            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 5px;">&copy; 2026 Lucien YAOGO | Expert Cyber & IA</p>
+            <!-- <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 5px;">&copy; 2026 Lucien YAOGO | Expert Cyber & IA</p> -->
 
             <div class="social-links" style="margin-top: 10px; margin-bottom: 10px; text-align: center;">
                 <a href="https://www.linkedin.com/in/votre-profil-linkedin/" target="_blank" style="text-decoration: none;">
