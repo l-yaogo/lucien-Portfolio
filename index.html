@@ -268,6 +268,57 @@
             font-weight: 600;
         }
 
+        /* Conteneur de la barre */
+        .progress-container {
+            width: 100%;
+            background-color: #1a1a1a; /* Fond sombre */
+            border-radius: 10px;
+            margin-top: 10px;
+            height: 12px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        
+        /* La barre elle-même */
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff9d, #00d4ff); /* Dégradé Cyber */
+            box-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            transition: width 1.5s ease-in-out; /* Animation fluide */
+            position: relative;
+        }
+        
+        /* Texte du pourcentage (apparaît au survol) */
+        .progress-text {
+            font-size: 10px;
+            color: #000;
+            font-weight: bold;
+            padding-right: 5px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .lang-item:hover .progress-text {
+            opacity: 1;
+        }
+        
+        /* Animation de "pulse" sur la barre */
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: scan 2s infinite;
+        }
+        
+        @keyframes scan {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
         #skills {
             padding: 100px 0;
             background: #0f0f0f;
@@ -920,9 +971,13 @@
             <div class="languages-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; text-align: center; justify-items: center;">
                 
                 <div class="lang-item">
-                    <span style="font-size: 3rem; font-weight: 800; color: #fff; font-family: 'Inter', sans-serif;">FR</span>
-                    <p style="color: #fff; margin-top: 10px;">Français</p>
-                    <p style="color: #00ff9d; font-size: 0.9rem;">Courant</p>
+                    <span class="lang-code">FR</span>
+                    <p class="lang-name">Français</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;">
+                            <span class="progress-text">90%</span>
+                        </div>
+                    </div>
                 </div>
     
                 <div class="lang-item">
