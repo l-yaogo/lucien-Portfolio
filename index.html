@@ -268,67 +268,6 @@
             font-weight: 600;
         }
 
-        /* === CSS CORRIGÉ POUR UNE GRANDE BARRE === */
-        
-        /* Conteneur principal (l'arrière-plan sombre) */
-        .progress-container {
-            width: 100%;             /* Occupe toute la largeur disponible de lang-item */
-            background-color: #1a1a1a; /* Fond noir sombre */
-            border-radius: 12px;
-            margin-top: 15px;
-            height: 18px;            /* HAUTEUR AUGMENTÉE (plus grande/épaisse) */
-            overflow: hidden;
-            border: 1px solid #333; /* Contour fin */
-            position: relative;
-            box-shadow: inset 0 2px 5px rgba(0,0,0,0.5); /* Effet de profondeur */
-        }
-        
-        /* La barre de progression (le remplissage) */
-        .progress-bar {
-            height: 100%;
-            /* Utilisation du dégradé Cyber original */
-            background: linear-gradient(90deg, #00ff9d, #00d4ff); 
-            border-radius: 10px;
-            transition: width 1.5s ease-in-out; /* Animation fluide */
-            position: relative;
-            
-            /* Effet Néon (Glow) pour une visibilité 70% supérieure */
-            box-shadow: 0 0 15px rgba(0, 255, 157, 0.7);
-        }
-        
-        /* Texte du pourcentage (apparaît au survol) */
-        .progress-text {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 11px;
-            color: #000;              /* Texte noir sur barre claire */
-            font-weight: bold;
-            font-family: 'JetBrains Mono', monospace;
-            opacity: 0;              /* Caché par défaut */
-            transition: opacity 0.3s;
-        }
-        
-        /* Afficher le texte au survol de la langue */
-        .lang-item:hover .progress-text {
-            opacity: 1;
-        }
-        
-        /* Animation "Scan" optionnelle pour un look Cyber */
-        .progress-bar::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            animation: scan 2s infinite;
-        }
-        
-        @keyframes scan {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
         #skills {
             padding: 100px 0;
             background: #0f0f0f;
@@ -981,13 +920,9 @@
             <div class="languages-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; text-align: center; justify-items: center;">
                 
                 <div class="lang-item">
-                    <span class="lang-code">FR</span>
-                    <p class="lang-name">Français</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 90%;">
-                            <span class="progress-text">90%</span>
-                        </div>
-                    </div>
+                    <span style="font-size: 3rem; font-weight: 800; color: #fff; font-family: 'Inter', sans-serif;">FR</span>
+                    <p style="color: #fff; margin-top: 10px;">Français</p>
+                    <p style="color: #00ff9d; font-size: 0.9rem;">Courant</p>
                 </div>
     
                 <div class="lang-item">
