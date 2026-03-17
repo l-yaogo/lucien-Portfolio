@@ -25,6 +25,14 @@ Passionné par la convergence entre l'**Intelligence Artificielle** et la **Séc
 
 ---
 
+[![Logo Cyber-Admin](youtube_logo.png)](https://www.youtube.com/@votre_chaine)
+# 📺 Aide au Futur Admin (Chaîne YouTube)
+## 📡 Maîtriser Cisco CCNA (Labs & Sécurité)
+
+[![Miniature Vidéo Labs](youtube_thumbnail.png)](https://www.youtube.com/watch?v=votre_video_id)
+
+> Retrouvez mes formations gratuites et mes simulations de labs réseau sécurisés.
+
 ### 📺 Content Creation
 Je partage mes connaissances sur les réseaux et l'administration système sur ma **chaîne YouTube dédiée à la formation Cisco CCNA**.
 
