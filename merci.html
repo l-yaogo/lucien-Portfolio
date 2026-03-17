@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Envoyé | Lucien YAOGO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #0f0f0f; /* Fond sombre identique au site */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+
+        .thank-you-card {
+            text-align: center;
+            padding: 50px 30px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            max-width: 500px;
+            width: 90%;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .icon-check {
+            font-size: 80px;
+            color: #00ff88; /* Votre vert signature */
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.4));
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn-home {
+            display: inline-block;
+            padding: 12px 30px;
+            background: transparent;
+            color: #00ff88;
+            border: 2px solid #00ff88;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .btn-home:hover {
+            background: #00ff88;
+            color: #111;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+            transform: scale(1.05);
+        }
+
+        .security-badge {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-card">
+        <div class="icon-check">
+            <i class="fas fa-circle-check"></i>
+        </div>
+        
+        <h1>Merci, Lucien a bien reçu votre message !</h1>
+        
+        <p>Votre demande a été transmise avec succès. <br> 
+           En tant qu'expert en Cybersécurité, je m'engage à vous répondre dans les plus brefs délais via une connexion sécurisée.</p>
+        
+        <a href="index.html" class="btn-home">
+            <i class="fas fa-arrow-left"></i> Retour au Portfolio
+        </a>
+
+        <div class="security-badge">
+            <i class="fas fa-shield-halved"></i>
+            Transmission sécurisée par FormSubmit & SSL Encryption
+        </div>
+    </div>
+
+</body>
+</html>
