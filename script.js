@@ -96,7 +96,7 @@
    
                     // Redirection après un court délai
                     setTimeout(() => {
-                        window.location.href = "merci.html";
+                        window.location.href = "./merci.html";
                     }, 1500);
                  
                 } else {
