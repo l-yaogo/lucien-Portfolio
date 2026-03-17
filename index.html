@@ -386,7 +386,12 @@
             to { left: 100%; }
         }
 
-        
+        /* === CSS POUR L'EFFET NÉON AU SURVOL === */
+        .fab.fa-linkedin:hover {
+            color: #00ff9d; /* Néon vert Cyber */
+            text-shadow: 0 0 10px rgba(0, 255, 157, 0.7); /* Lueur diffuse */
+            transform: scale(1.1); /* Léger grossissement */
+        }
 
         #projects {
             padding: 100px 0;
@@ -1084,6 +1089,17 @@
     <footer style="padding: 40px 0; border-top: 1px solid var(--border); background: var(--bg-dark); text-align: center;">
         <div class="container">
             <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Lucien YAOGO | Expert Cyber & IA</p>
+
+            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 5px;">&copy; 2026 Lucien YAOGO | Expert Cyber & IA</p>
+
+            <div class="social-links" style="margin-top: 10px; margin-bottom: 10px; text-align: center;">
+                <a href="https://www.linkedin.com/in/votre-profil-linkedin/" target="_blank" style="text-decoration: none;">
+                    <i class="fab fa-linkedin" style="font-size: 2rem; color: #fff; transition: 0.3s; padding: 10px;"></i>
+                </a>
+            </div>
+
+            <div class="badges" style="display: flex; gap: 10px; justify-content: center; align-items: center; margin-bottom: 10px;">
+            </div>
             
             <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 
