@@ -349,7 +349,73 @@
             box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
         }
 
+        /* Style du conteneur de formulaire */
+        form {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
         
+        /* Champs de saisie */
+        input, textarea {
+            width: 100%;
+            background: #222 !important;
+            border: 2px solid #333 !important;
+            border-radius: 8px !important;
+            color: #fff !important;
+            padding: 12px !important;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        /* Effet au clic (Focus) - Très dynamique */
+        input:focus, textarea:focus {
+            border-color: #00ff88 !important; /* Le vert fluo de votre bouton */
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+            outline: none;
+            transform: translateY(-2px);
+        }
+        
+        /* Le bouton "Envoyer" stylisé */
+        button[type="submit"] {
+            width: 100%;
+            background: transparent;
+            border: 2px solid #00ff88;
+            color: #00ff88;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+        
+        /* Animation au survol du bouton */
+        button[type="submit"]:hover {
+            background: #00ff88;
+            color: #111;
+            box-shadow: 0 0 25px rgba(0, 255, 136, 0.5);
+        }
+
+        .security-note {
+            font-size: 0.85rem;
+            color: #888; /* Gris discret */
+            text-align: center;
+            margin-top: 15px;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .security-note i {
+            color: #00ff88; /* Le vert fluo de votre bouton pour rappeler la sécurité active */
+            font-size: 0.9rem;
+        }
 
         .progress-bar {
             height: 100%;
@@ -1079,6 +1145,10 @@
                     <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
                         <span class="spinner" style="display:none;">⏳</span>
                         <span class="btn-text">Envoyer le message</span>
+                        
+                        <p class="security-note">
+                            <i class="fas fa-lock"></i> Vos données sont traitées de manière sécurisée et confidentielle.
+                        </p>
                     </button>
                     <!-- paramètres FormSubmit -->
                     <input type="hidden" name="_captcha" value="false">
