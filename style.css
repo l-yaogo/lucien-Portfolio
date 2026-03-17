@@ -772,6 +772,82 @@
             color: var(--text-muted);
         }
 
+        /* --- Conteneur principal des informations --- */
+        .contact-info {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 204, 0.1);
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        /* --- Liste des détails de contact --- */
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        /* --- Chaque ligne de contact --- */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 15px;
+            background: rgba(0, 255, 204, 0.03);
+            border-radius: 10px;
+            border: 1px solid transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* --- Icônes --- */
+        .contact-item i {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 255, 204, 0.1);
+            color: #00ffcc; /* Vert néon */
+            border-radius: 50%;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        /* --- Texte des contacts --- */
+        .contact-item span {
+            color: #e0e0e0;
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* --- EFFETS AU SURVOL (Hover) --- */
+        
+        .contact-item:hover {
+            background: rgba(0, 255, 204, 0.08);
+            border-color: #00ffcc;
+            transform: translateX(8px); /* Petit décalage vers la droite */
+            cursor: pointer;
+        }
+        
+        .contact-item:hover i {
+            background: #00ffcc;
+            color: #1a1a1a;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+        }
+        
+        .contact-item:hover span {
+            color: #fff;
+            font-weight: 500;
+        }
+
         #languages {
             padding: 60px 0;
             background: var(--bg-dark);
