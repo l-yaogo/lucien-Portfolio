@@ -191,3 +191,29 @@
         if (targetSection) {
             observeLanguages.observe(targetSection);
         }
+
+      // --- Animation Dynamique de Révélation (Scroll Reveal) ---
+
+       // 1. Sélectionner toutes les cartes de labo
+       const labCards = document.querySelectorAll('.lab-card');
+       
+       // 2. Créer l'observateur d'intersection
+       const revealObserver = new IntersectionObserver((entries, observer) => {
+           entries.forEach(entry => {
+               // Si la carte entre dans l'écran (avec un seuil de 15%)
+               if (entry.isIntersecting) {
+                   // Ajouter la classe CSS 'is-visible'
+                   entry.target.classList.add('is-visible');
+                   
+                   // Facultatif : arrêter d'observer une fois révélé pour la performance
+                   observer.unobserve(entry.target);
+               }
+           });
+       }, {
+           threshold: 0.15 // 15% de la carte doit être visible pour déclencher l'animation
+       });
+       
+       // 3. Appliquer l'observateur à chaque carte
+       labCards.forEach(card => {
+           revealObserver.observe(card);
+       });
